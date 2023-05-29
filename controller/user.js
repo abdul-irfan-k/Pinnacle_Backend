@@ -152,7 +152,7 @@ const getEmailStructure = (managerName, fileUrl) => {
     <p>Dear ${managerName} your registration in pinncle is succussfull </p>
 
     <span class="span">You can download your applicants detais pdf here </span>
-    <div class="button"><a href="http://localhost:8000/EventPdf/${fileUrl}">Download</a></div>
+    <div class="button"><a href="https://pinnacle-backend.onrender.com/EventPdf/${fileUrl}">Download</a></div>
 </body>
 
 </html>`
