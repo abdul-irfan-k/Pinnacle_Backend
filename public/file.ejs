@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            padding: 0px 100px;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .div1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .toDiv {
+            margin-left: 20px;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+        }
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            /* width: 1000px; */
+            text-align: center;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        .consent {
+            margin-top: 20px;
+        }
+
+        .signature {
+            margin-top: 80px;
+            border-top: 1px solid black;
+            width: 200px;
+        }
+
+        .sigh {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        p {
+            font-size: 18PX;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="http://localhost:8000/images/Picture1.png" alt="">
+    </div>
+
+    <hr>
+    <div class="div1">
+        <p> <b>Date:</b> <br>19/56/2003</p>
+        <p><b>St Philomena College </b><br>Philonagar, Darbe, Puttur, D.K. - 574202 </p>
+    </div>
+    <div class="div2">
+        <p><b>To,</b></p>
+        <div class="toDiv">
+            <p>Principal</p>
+            <p>
+                <%=data.CollegeName%>
+            </p>
+        </div>
+        <div class="center">
+            <P><b>Sub:Seeking Permisson to participate in PINNACLE 2K23</b></P>
+        </div>
+        <div class="center">
+            <P>
+
+                This is to inform you that your college has accepted the invitation letter and is participating in
+                <b>'PINNACLE 2K23'</b> on 7<sup>th</sup> June, 2023.
+                Below enlisted are he names of the students who are participating in the event and the consent letter
+                which
+                needs to be signed by you.
+            </P>
+        </div>
+
+        <table>
+            <tr>
+                <th>Sl.No</th>
+                <th>Event</th>
+                <th>Participant Name</th>
+                <th>Contact Number</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Web Design</td>
+                <td>
+                    <%=data.WebDesign.Name%>
+                </td>
+                <td>
+                    <%=data.WebDesign.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Code Clash</td>
+                <td>
+                    <%=data.Coding.Name%>
+                </td>
+                <td>
+                    <%=data.Coding.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gaming</td>
+                <td>
+                    <%=data.Gaming.Name%>
+                </td>
+                <td>
+                    <%=data.Gaming.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gaming</td>
+                <td>
+                    <%=data.Gaming1.Name%>
+                </td>
+                <td>
+                    <%=data.Gaming1.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>IT Quiz</td>
+                <td>
+                    <%=data.ITQuiz.Name%>
+                </td>
+                <td>
+                    <%=data.ITQuiz.Phone%>
+                </td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>IT Quiz</td>
+                <td>
+                    <%=data.ITQuiz1.Name%>
+                </td>
+                <td>
+                    <%=data.ITQuiz1.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Paper Presentation</td>
+                <td>
+                    <%=data.PaperPresentation.Name%>
+                </td>
+                <td>
+                    <%=data.PaperPresentation.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Surprise Event</td>
+                <td>
+                    <%=data.SurpriseEvent.Name%>
+                </td>
+                <td>
+                    <%=data.SurpriseEvent.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>PhotoGraphy and VideoGraphy</td>
+                <td>
+                    <%=data.PhotoGraphyAndVideoGraphy.Name%>
+                </td>
+                <td>
+                    <%=data.PhotoGraphyAndVideoGraphy.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>IT Manager</td>
+                <td>
+                    <%=data.ITManager.Name%>
+                </td>
+                <td>
+                    <%=data.ITManager.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Product Launch</td>
+                <td>
+                    <%=data.ProductLaunch.Name%>
+                </td>
+                <td>
+                    <%=data.ProductLaunch.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Product Launch</td>
+                <td>
+                    <%=data.ProductLaunch1.Name%>
+                </td>
+                <td>
+                    <%=data.ProductLaunch1.Phone%>
+                </td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance1.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance1.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance2.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance2.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance3.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance3.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance4.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance4.Phone%>
+                </td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Thema Dance</td>
+                <td>
+                    <%=data.ThemaDance5.Name%>
+                </td>
+                <td>
+                    <%=data.ThemaDance.Phone%>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="consent">
+            <h3>Consent Letter:</h3>
+            <p>
+                I, Principal of <%=data.CollegeName%> certify that above facts are true to the best of my
+                knowledge and belief,
+                and I understand that the students are subjected to any disciplinary actions in the event if the facts
+                are found to be falsified. I hereby permit the students of my college to participate in PINNACLE 2K23.
+
+            </p>
+        </div>
+        <div class="sigh">
+            <p class="signature">
+                signature of Principal
+            </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
